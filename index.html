@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+              <nav>
+                <img src ="" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Saarika Budhathoki</h1>
+              </div>    
+            </div>
+            <!------about me------>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image.jpg"> 
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About me</h1>
+                        <p>I am a web designer  with a passion for creating accesible,performat, and beautiful digital experiences. With a background in computer science and human-computer interaction, I bridge the gap between design and development. </p>
+                        <br>
+                         <input type="radio" name="mail" value="saarikabudhathoki22@gmail.com"> saarikabudhathoki22@gmail.com
+                         <br>
+                         <br>
+                        <div class="tab-titles">
+                            <p class="tab-links active.link"onclick="opentab('skills')">Skills</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Developer</span><br>HTML5,CSS,JavaScript(ES6+)<br>React, Vue.js,Angular</li>
+                                <li><span>Web Developer</span><br>Node.js,Express<br>Python,Djnago</li>
+                            </ul>
+                        </div>
+                            <div class="tab-title">
+                                <p class="tab-links" onclick="opentabs('experience')">Experience</p>
+                                <div class="tab-contents" id="experience">
+                                    <ul>
+                                        <li>Basic knowledge about HTML/CSS/JS</li>
+                                        <li>Contribution in cousrework provided by college</li>
+                                    </ul>
+                            </div>
+                        </div>
+                            <div class="tab-title">
+                                <p class="tab-links" onclick="opentabs('education')">Education</p>
+                                <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Islington College</span></li>
+                                    <li><span>Bsc(hons)inComputing with Artificial Intelligence</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---services--->
+        <div class="footerContainer">
+            <div class="socialicon">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+             </div>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="footerbottom">
+                <p>2025 &copy; LEORY<span>Footwear</span></p>
+        </div>
+        <script>
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-content");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablinks.classlist.remove("active-link");
+                }
+                for(tabcontents of tabcontents){
+                    tablink.classlist.remove("active-link");
+                }
+            }
+        </script>
+    </body>
+</html>
